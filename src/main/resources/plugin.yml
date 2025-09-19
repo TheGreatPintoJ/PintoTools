@@ -51,7 +51,6 @@ commands:
     aliases:
       - countdown
       - ct
-      - time
   graceperiod:
     description: Start a grace period timer.
     usage: /graceperiod <seconds>
