@@ -1,6 +1,6 @@
 # PintoTools
 
-A Minecraft server plugin providing useful commands for player management, item editing, and utility functions.
+A Minecraft Spigot server plugin providing useful commands for player management, item editing, and utility functions.
 
 ## Features
 
