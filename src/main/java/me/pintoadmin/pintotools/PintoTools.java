@@ -22,6 +22,9 @@ public final class PintoTools extends JavaPlugin {
         getCommand("itemedit").setExecutor(new ItemEditCommand());
         getCommand("itemedit").setTabCompleter(new ItemEditCompleter());
 
+        getCommand("potionedit").setExecutor(new PotionEditCommand());
+        getCommand("potionedit").setTabCompleter(new PotionEditCompleter());
+
         getCommand("summonnoai").setExecutor(new SummonNoAICommand());
         getCommand("summonnoai").setTabCompleter(new SummonNoAICompleter());
 

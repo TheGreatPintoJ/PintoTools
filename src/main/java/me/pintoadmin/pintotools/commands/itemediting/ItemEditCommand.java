@@ -123,7 +123,28 @@ public class ItemEditCommand implements CommandExecutor {
                     player.getInventory().getItemInMainHand().addUnsafeEnchantment(targetEnchant, Integer.parseInt(args[2]));
                     player.sendMessage(ChatColor.GREEN+"Enchanted "+player.getInventory().getItemInMainHand().getType()+" with "+args[1]);
                 } catch (RuntimeException e){
-                    player.sendMessage(ChatColor.RED+"Could not find an enchantment called "+args[0]);
+                    player.sendMessage(ChatColor.RED+"Could not find an enchantment called "+args[1]);
+                }
+                break;
+            case "damage":
+                if(player.getInventory().getItemInMainHand().getType().getMaxDurability() <= 0){
+                    player.sendMessage(ChatColor.RED+"This item has no durability.");
+                    return true;
+                }
+                if(player.getInventory().getItemInMainHand().getItemMeta().isUnbreakable()) {
+                    player.sendMessage(ChatColor.GOLD + "This item is unbreakable, the damage will not show up while it is unbreakable.");
+                }
+                if(args.length == 1){
+                    player.getInventory().getItemInMainHand().setDurability((short)0);
+                    player.sendMessage(ChatColor.GREEN+"Set damage to 0");
+                } else if(args.length == 2){
+                    int newDurability = Integer.parseInt(args[1]);
+                    if(newDurability < 0 || newDurability > player.getInventory().getItemInMainHand().getType().getMaxDurability()){
+                        player.sendMessage(ChatColor.RED+"Damage must be between 0 and "+player.getInventory().getItemInMainHand().getType().getMaxDurability());
+                        return true;
+                    }
+                    player.getInventory().getItemInMainHand().setDurability((short)newDurability);
+                    player.sendMessage(ChatColor.GREEN+"Set damage to "+newDurability);
                 }
                 break;
             case "clear":
