@@ -123,7 +123,7 @@ public class ItemEditCommand implements CommandExecutor {
                     player.getInventory().getItemInMainHand().addUnsafeEnchantment(targetEnchant, Integer.parseInt(args[2]));
                     player.sendMessage(ChatColor.GREEN+"Enchanted "+player.getInventory().getItemInMainHand().getType()+" with "+args[1]);
                 } catch (RuntimeException e){
-                    player.sendMessage(ChatColor.RED+"Could not find an enchantment called "+args[0]);
+                    player.sendMessage(ChatColor.RED+"Could not find an enchantment called "+args[1]);
                 }
                 break;
             case "damage":
