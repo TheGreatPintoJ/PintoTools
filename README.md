@@ -34,16 +34,16 @@ Each command can be used in-game. Example usages:
 
 ## Permissions
 
-| Command        | Permission               | Aliases |
-|----------------|--------------------------|---------|
-| heal           | pintotools.heal          | /h /hp  |
-| feed           | pintotools.feed          | /food   |
-| fly            | pintotools.fly           | /f      |
+| Command        | Permission               | Aliases                |
+|----------------|--------------------------|------------------------|
+| heal           | pintotools.heal          | /h /hp                 |
+| feed           | pintotools.feed          | /food                  |
+| fly            | pintotools.fly           | /f                     |
 | itemedit       | pintotools.itemedit      | /itementry /itemeditor |
-| summonnoai     | pintotools.summonnoai    | /snai /summonnai |
-| timer          | pintotools.timer         | /countdown /ct |
-| graceperiod    | pintotools.graceperiod   | /cp /grace |
-| invsee         | pintotools.invsee        | /isee /inventorysee |
+| summonnoai     | pintotools.summonnoai    | /snai /summonnai       |
+| timer          | pintotools.timer         | /countdown /ct         |
+| graceperiod    | pintotools.graceperiod   | /cp /grace             |
+| invsee         | pintotools.invsee        | /isee /inventorysee    |
 
 ## Authors
 
