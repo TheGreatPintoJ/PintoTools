@@ -32,20 +32,18 @@ Each command can be used in-game. Example usages:
 - `/graceperiod <seconds>`
 - `/invsee <player>`
 
-Aliases are available for most commands (see `plugin.yml`).
-
 ## Permissions
 
-| Command        | Permission                |
-|----------------|--------------------------|
-| heal           | pintotools.heal          |
-| feed           | pintotools.feed          |
-| fly            | pintotools.fly           |
-| itemedit       | pintotools.itemedit      |
-| summonnoai     | pintotools.summonnoai    |
-| timer          | pintotools.timer         |
-| graceperiod    | pintotools.graceperiod   |
-| invsee         | pintotools.invsee        |
+| Command        | Permission               | Aliases |
+|----------------|--------------------------|---------|
+| heal           | pintotools.heal          | /h /hp  |
+| feed           | pintotools.feed          | /food   |
+| fly            | pintotools.fly           | /f      |
+| itemedit       | pintotools.itemedit      | /itementry /itemeditor |
+| summonnoai     | pintotools.summonnoai    | /snai /summonnai |
+| timer          | pintotools.timer         | /countdown /ct |
+| graceperiod    | pintotools.graceperiod   | /cp /grace |
+| invsee         | pintotools.invsee        | /isee /inventorysee |
 
 ## Authors
 
