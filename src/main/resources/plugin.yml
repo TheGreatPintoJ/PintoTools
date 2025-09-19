@@ -67,3 +67,11 @@ commands:
     aliases:
       - isee
       - inventorysee
+  potionedit:
+    description: Edit the potion effects of the item in your hand.
+    usage: /potionedit <add|remove|clear> <effect> [amplifier] [duration]
+    permission: pintotools.potionedit
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - potioneditor
+      - potionmodify
