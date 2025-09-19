@@ -17,9 +17,6 @@ public final class PintoTools extends JavaPlugin {
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("feed").setExecutor(new FeedCommand());
 
-        getCommand("troll").setExecutor(new TrollCommand());
-        getCommand("troll").setTabCompleter(new TrollCompleter());
-
         getCommand("fly").setExecutor(new FlyCommand());
 
         getCommand("itemedit").setExecutor(new ItemEditCommand());

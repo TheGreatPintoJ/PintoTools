@@ -19,14 +19,6 @@ commands:
     permission-message: You do not have permission to use this command.
     aliases:
       - food
-  troll:
-    description: Troll a player.
-    usage: /troll <trolltype> <player>
-    permission: pintotools.troll
-    permission-message: You do not have permission to use this command.
-    aliases:
-      - t
-      - pranks
   fly:
     description: Toggle flight mode for yourself or another player.
     usage: /fly [player]
