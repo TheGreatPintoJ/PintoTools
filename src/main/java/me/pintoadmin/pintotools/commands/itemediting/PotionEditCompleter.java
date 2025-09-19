@@ -22,7 +22,9 @@ public class PotionEditCompleter implements TabCompleter {
         }
 
         if(args.length == 1) {
-            return java.util.Arrays.asList("clear", "add", "remove");
+            return java.util.Arrays.asList("clear", "add", "remove", "color").stream()
+                    .filter(option -> option.startsWith(args[0].toLowerCase()))
+                    .toList();
         } else if(args.length == 2 && args[0].equalsIgnoreCase("add")) {
             java.util.List<String> effects = new java.util.ArrayList<>();
             for(org.bukkit.potion.PotionEffectType type : org.bukkit.potion.PotionEffectType.values()) {
