@@ -1,0 +1,78 @@
+name: PintoTools
+version: '1.0-SNAPSHOT'
+main: me.pintoadmin.pintotools.PintoTools
+api-version: '1.21'
+authors: [ PintoJ ]
+commands:
+  heal:
+    descrription: Heal yourself or another player.
+    usage: /heal [player]
+    permission: pintotools.heal
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - h
+      - hp
+  feed:
+    description: Feed yourself or another player.
+    usage: /feed [player]
+    permission: pintotools.feed
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - food
+  troll:
+    description: Troll a player.
+    usage: /troll <trolltype> <player>
+    permission: pintotools.troll
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - t
+      - pranks
+  fly:
+    description: Toggle flight mode for yourself or another player.
+    usage: /fly [player]
+    permission: pintotools.fly
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - f
+      - flight
+  itemedit:
+    description: Edit the item in your hand.
+    usage: /itemedit <name|lore|attribute|clear>
+    permission: pintotools.itemedit
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - itementry
+      - itemeditor
+  summonnoai:
+    description: Summon a mob without AI.
+    usage: /summonnoai <mob>
+    permission: pintotools.summonnoai
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - snai
+      - summonnai
+  timer:
+    description: Start a countdown timer.
+    usage: /timer <seconds>
+    permission: pintotools.timer
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - countdown
+      - ct
+      - time
+  graceperiod:
+    description: Start a grace period timer.
+    usage: /graceperiod <seconds>
+    permission: pintotools.graceperiod
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - gp
+      - grace
+  invsee:
+    description: View another player's inventory.
+    usage: /invsee <player>
+    permission: pintotools.invsee
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - isee
+      - inventorysee
