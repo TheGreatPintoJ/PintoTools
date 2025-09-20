@@ -12,6 +12,7 @@ A Minecraft Spigot server plugin providing useful commands for player management
 - **Timer**: Start a timer.
 - **GracePeriod**: Start a grace period timer, disables PvP for the duration.
 - **InvSee**: View another player's inventory.
+- **PotinoEdit**: Edit the NBT of potions
 
 ## Installation
 
@@ -31,19 +32,21 @@ Each command can be used in-game. Example usages:
 - `/timer <seconds>`
 - `/graceperiod <seconds>`
 - `/invsee <player>`
+- `/potionedit <add|remove|clear|color`
 
 ## Permissions
 
-| Command        | Permission               | Aliases                |
-|----------------|--------------------------|------------------------|
-| heal           | pintotools.heal          | /h /hp                 |
-| feed           | pintotools.feed          | /food                  |
-| fly            | pintotools.fly           | /f                     |
-| itemedit       | pintotools.itemedit      | /itementry /itemeditor |
-| summonnoai     | pintotools.summonnoai    | /snai /summonnai       |
-| timer          | pintotools.timer         | /countdown /ct         |
-| graceperiod    | pintotools.graceperiod   | /cp /grace             |
-| invsee         | pintotools.invsee        | /isee /inventorysee    |
+| Command        | Permission               | Aliases                      |
+|----------------|--------------------------|------------------------------|
+| heal           | pintotools.heal          | /h /hp                       |
+| feed           | pintotools.feed          | /food                        |
+| fly            | pintotools.fly           | /f                           |
+| itemedit       | pintotools.itemedit      | /itementry /itemeditor       |
+| summonnoai     | pintotools.summonnoai    | /snai /summonnai             |
+| timer          | pintotools.timer         | /countdown /ct               |
+| graceperiod    | pintotools.graceperiod   | /cp /grace                   |
+| invsee         | pintotools.invsee        | /isee /inventorysee          |
+| potionedit     | pintotools.potionedit    | /potioneditor /potionmoodify |
 
 ## Authors
 
