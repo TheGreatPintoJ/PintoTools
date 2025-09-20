@@ -16,7 +16,7 @@ A Minecraft Spigot server plugin providing useful commands for player management
 
 ## Installation
 
-1. Download the latest `PintoTools-1.0.jar` from the `build/libs/` directory.
+1. Download the latest `PintoTools-1.1.jar` from the `build/libs/` directory.
 2. Place the jar file into your server's `plugins` folder.
 3. Restart your server.
 
