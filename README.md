@@ -7,7 +7,7 @@ A Minecraft Spigot server plugin providing useful commands for player management
 - **Heal**: Restore health to yourself or another player.
 - **Feed**: Replenish hunger for yourself or another player.
 - **Fly**: Toggle flight mode for yourself or others.
-- **ItemEdit**: Edit the item in your hand (name, lore, attributes, clear).
+- **ItemEdit**: Edit the item in your hand (name, lore, damage, flags, attributes, clear).
 - **SummonNoAI**: Summon mobs without AI.
 - **Timer**: Start a timer.
 - **GracePeriod**: Start a grace period timer, disables PvP for the duration.
@@ -27,7 +27,7 @@ Each command can be used in-game. Example usages:
 - `/heal [player]`
 - `/feed [player]`
 - `/fly [player]`
-- `/itemedit <name|lore|attribute|clear>`
+- `/itemedit <name|lore|damage|flags|attribute|clear>`
 - `/summonnoai <mob>`
 - `/timer <seconds>`
 - `/graceperiod <seconds>`
