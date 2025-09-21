@@ -12,7 +12,7 @@ A Minecraft Spigot server plugin providing useful commands for player management
 - **Timer**: Start a timer.
 - **GracePeriod**: Start a grace period timer, disables PvP for the duration.
 - **InvSee**: View another player's inventory.
-- **PotinoEdit**: Edit the NBT of potions
+- **PotionEdit**: Edit the NBT of potions
 
 ## Installation
 
