@@ -17,8 +17,9 @@ public class PotionEditCompleter implements TabCompleter {
         }
         Player player = (Player) sender;
 
-        if(player.getInventory().getItemInMainHand().getType() == org.bukkit.Material.AIR || !player.getInventory().getItemInMainHand().getType().toString().contains("POTION")) {
-            return List.of("You're not holding a potion" );
+        if(player.getInventory().getItemInMainHand().getType() == org.bukkit.Material.AIR || (!player.getInventory().getItemInMainHand().getType().toString().contains("POTION"))
+                && !player.getInventory().getItemInMainHand().getType().toString().contains("TIPPED")) {
+            return List.of("You're not holding a potion. Current item type: "+ player.getInventory().getItemInMainHand().getType());
         }
 
         if(args.length == 1) {

@@ -20,7 +20,7 @@ public class PotionEditCommand implements CommandExecutor {
             player.sendMessage("Usage: /potionedit <clear|add|remove> <effect> [duration] [amplifier]");
             return true;
         }
-        if(!player.getInventory().getItemInMainHand().getType().toString().contains("POTION")) {
+        if(!player.getInventory().getItemInMainHand().getType().toString().contains("POTION") && !player.getInventory().getItemInMainHand().getType().toString().contains("TIPPED")) {
             player.sendMessage("You must be holding a potion in your main hand.");
             return true;
         }
@@ -86,6 +86,7 @@ public class PotionEditCommand implements CommandExecutor {
                     meta.removeCustomEffect(effectType);
                     item.setItemMeta(meta);
                     player.sendMessage(ChatColor.GREEN+"Removed effect: " + effectType.getName());
+                    return true;
                 }
             case "color":
                 if(args.length < 2) {
