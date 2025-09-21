@@ -29,7 +29,7 @@ commands:
       - flight
   itemedit:
     description: Edit the item in your hand.
-    usage: /itemedit <name|lore|attribute|clear>
+    usage: /itemedit <name|lore|attribute|clear> [arguments]
     permission: pintotools.itemedit
     permission-message: You do not have permission to use this command.
     aliases:
@@ -69,9 +69,17 @@ commands:
       - inventorysee
   potionedit:
     description: Edit the potion effects of the item in your hand.
-    usage: /potionedit <add|remove|clear> <effect> [amplifier] [duration]
+    usage: /potionedit <add|remove|clear|color> [arguments]
     permission: pintotools.potionedit
     permission-message: You do not have permission to use this command.
     aliases:
       - potioneditor
       - potionmodify
+  sudo:
+    description: Execute a command as another player.
+    usage: /sudo <player> <command>
+    permission: pintotools.sudo
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - executeas
+      - runas
