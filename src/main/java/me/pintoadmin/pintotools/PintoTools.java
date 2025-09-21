@@ -34,6 +34,9 @@ public final class PintoTools extends JavaPlugin {
         getCommand("graceperiod").setTabCompleter(new NumberCompleter());
 
         getCommand("invsee").setExecutor(new InvSeeCommand());
+
+        getCommand("sudo").setExecutor(new SudoCommand());
+        getCommand("sudo").setTabCompleter(new SudoCompleter());
     }
 
     @Override
