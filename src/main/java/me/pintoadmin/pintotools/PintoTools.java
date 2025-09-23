@@ -37,6 +37,9 @@ public final class PintoTools extends JavaPlugin {
 
         getCommand("sudo").setExecutor(new SudoCommand());
         getCommand("sudo").setTabCompleter(new SudoCompleter());
+
+        getCommand("worldrule").setExecutor(new WorldRuleCommand());
+        getCommand("worldrule").setTabCompleter(new WorldRuleCompleter(this));
     }
 
     @Override

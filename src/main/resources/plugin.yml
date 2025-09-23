@@ -83,3 +83,10 @@ commands:
     aliases:
       - executeas
       - runas
+  worldrule:
+    description: Set or view world rules.
+    usage: /worldrule <gamerule> <value> [world]
+    permission: pintotools.worldrule
+    permission-message: You do not have permission to use this command.
+    aliases:
+      - wrule
